@@ -57,9 +57,6 @@ def runner
   total = initial_round
   display_card_total(total)
   while total < 21
-    if get_user_input == "s"
-      break
-    end
     hit?(total)
     display_card_total(total)
   end
